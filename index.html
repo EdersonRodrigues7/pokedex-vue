@@ -15,24 +15,17 @@
         src="https://hanashiro.github.io/pokedex/images/pokeball.svg"
         alt="pokeball"
       />
-      <input
-        v-model="nameFilter"
-        type="text"
-        name="pokeFilter"
-        id="pokeFilter"
-        placeholder="Search"
-        maxlength="20"
-      />
-      <ul class="poke-list">
-        <my-list v-for="item in pokeList" :pokemon="item" :key="item.number"></my-list>
-      </ul>
+      <router-view></router-view>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script src="./src/routes.js"></script>
     <script src="./src/filters.js"></script>
+    <script src="./src/home-page-component.js"></script>
     <script src="./src/list-component.js"></script>
-    <script src="./src/directives.js"></script>
+    <script src="./src/about-page-component.js"></script>
     <script src="./src/services.js"></script>
+    <script src="./src/directives.js"></script>
     <script src="./src/app.js"></script>
   </body>
 </html>
